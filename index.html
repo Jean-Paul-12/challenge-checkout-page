@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image"
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image"
     href="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Checkout Page</title>
-  </head>
-  <body>
-    <main class="Container"></main>
-    <h1>Checkout</h1>
-    <section class="container__shopping-card">
-      <div class="shopping-card">
-        <div class="card-product">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Checkout Page</title>
+</head>
+
+<body>
+  <main class="Container"></main>
+  <h1>Checkout</h1>
+  <section class="container__shopping-card">
+    <div class="shopping-card">
+      <div class="card-product">
         <img src="./assets/img/photo1.png" alt="">
         <h3>Vintage Backbag</h3>
-        <p>$54.99</p>
-        <p>$94.99</p>
-        </div>
-        <div class="card-product card-product--secondary">
-          <img src="./assets/img/photo2.png" alt="">
-          <h3>Vintage Backbag</h3>
-          <p>$54.99</p>
-          <p>$94.99</p>
-          </div>
+        <p class="product-offer">$54.99</p>
+        <p class="product-price">$94.99</p>
+      </div>
+      <div class="card-product card-product--secondary">
+        <img src="./assets/img/photo2.png" alt="">
+        <h3>Vintage Backbag</h3>
+          <p class="product-offer">$54.99</p>
+          <p class="product-price">$94.99</p>
       </div>
       <hr>
-      <div class="">
-      <h2>Shipping</h2>
-      <p>$19</p>
+      <div class="total-product">
+        <h2>Shipping</h2>
+        <p>$19</p>
       </div>
       <hr>
-      <div class="">
-      <h2>Total</h2>
-      <p>$148.98</p>
+      <div class="total-product">
+        <h2>Total</h2>
+        <p>$148.98</p>
+      </div>
     </div>
-    </section>
-  </body>
+  </section>
+
+  <section class="container-form">
+    <div class="card-form">
+
+      <h2>Contact information</h2>
+
+      <fieldset>
+        <h3>E-mail</h3>
+        <input type="email" placeholder="Enter your email...">
+      </fieldset>
+      <fieldset>
+        <h3>Phone</h3>
+        <input type="tel" placeholder="Enter your phone...">
+      </fieldset>
+
+      <h2>Shipping address</h2>
+
+      <fieldset>
+        <h3>Full name</h3>
+        <input type="text" placeholder="Your full name...">
+      </fieldset>
+      <fieldset>
+        <h3>Address</h3>
+        <input type="text" placeholder="Your address...">
+      </fieldset>
+      <fieldset>
+        <h3>City</h3>
+        <input type="text" placeholder="Your city...">
+      </fieldset>
+      <fieldset>
+        <h3>Country</h3>
+        <select name="" id="" placeholder="Your Country...">
+          <option value="Colombia">Colombia</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Unite State">Unite State</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <h3>Postal code</h3>
+        <input type="text" placeholder="Your postal code...">
+      </fieldset>
+
+      <label for=""><input type="checkbox">Save this information for next time</label>
+
+      <a href="">Guardar</a>
+    </div>
+  </section>
+</body>
+
 </html>
