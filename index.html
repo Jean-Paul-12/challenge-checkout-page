@@ -15,26 +15,23 @@
   <h1>Checkout</h1>
   <section class="container__shopping-card">
     <div class="shopping-card">
-      <div class="card-product">
+      <article class="card-product">
         <img src="./assets/img/photo1.png" alt="">
+        <div>
         <h3>Vintage Backbag</h3>
-        <p class="product-offer">$54.99</p>
-        <p class="product-price">$94.99</p>
-      </div>
-      <div class="card-product card-product--secondary">
-        <img src="./assets/img/photo2.png" alt="">
-        <h3>Vintage Backbag</h3>
-          <p class="product-offer">$54.99</p>
-          <p class="product-price">$94.99</p>
-      </div>
+          
+        <p class="product-offer">$54.99<span class="product-price">$94.99</span></p>
+        </div>
+      </article>
+      
       <hr>
       <div class="total-product">
-        <h2>Shipping</h2>
+        <p>Shipping</p>
         <p>$19</p>
       </div>
       <hr>
       <div class="total-product">
-        <h2>Total</h2>
+        <p>Total</p>
         <p>$148.98</p>
       </div>
     </div>
@@ -43,47 +40,48 @@
   <section class="container-form">
     <div class="card-form">
 
-      <h2>Contact information</h2>
+      <h2 class="card-contact-title">Contact information</h2>
 
-      <fieldset>
-        <h3>E-mail</h3>
+      <fieldset class="email">
+        <label>E-mail</label>
         <input type="email" placeholder="Enter your email...">
       </fieldset>
-      <fieldset>
-        <h3>Phone</h3>
+      <fieldset class="phone">
+        <label>Phone</label>
         <input type="tel" placeholder="Enter your phone...">
       </fieldset>
 
-      <h2>Shipping address</h2>
+      <h2 class="card-contact-title card-contact-title--address">Shipping address</h2>
 
-      <fieldset>
-        <h3>Full name</h3>
+      <fieldset class="full-name">
+        <label>Full name</label>
         <input type="text" placeholder="Your full name...">
       </fieldset>
-      <fieldset>
-        <h3>Address</h3>
+      <fieldset class="address">
+        <label >Address</label>
         <input type="text" placeholder="Your address...">
       </fieldset>
-      <fieldset>
-        <h3>City</h3>
+      <fieldset class="city">
+        <label>City</label>
         <input type="text" placeholder="Your city...">
       </fieldset>
-      <fieldset>
-        <h3>Country</h3>
-        <select name="" id="" placeholder="Your Country...">
+      <fieldset class="country">
+        <label>Country</label>
+        <select name="" id="">
+          <option value="" selected disabled hidden>Your Country...</option>
           <option value="Colombia">Colombia</option>
           <option value="Mexico">Mexico</option>
           <option value="Unite State">Unite State</option>
         </select>
       </fieldset>
-      <fieldset>
-        <h3>Postal code</h3>
+      <fieldset class="postal-code">
+        <label>Postal code</label>
         <input type="text" placeholder="Your postal code...">
       </fieldset>
 
-      <label for=""><input type="checkbox">Save this information for next time</label>
+      <label for="" class="checkbox"><input type="checkbox" >Save this information for next time</label>
 
-      <a href="">Guardar</a>
+      <a href="" class="button">Guardar</a>
     </div>
   </section>
 </body>
