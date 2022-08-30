@@ -16,12 +16,8 @@
     padding-right: 34px;
     padding-left: 27px;
     padding-top: 30px;
-    width: 82%;
-}
+    width: 92%;
 
-.card-product--secondary {
-    padding-top: 28px;
-    padding-bottom: 87px;
 }
 
 .shopping-card img {
@@ -32,6 +28,7 @@
 }
 
 .shopping-card h3 {
+    height: 20.31px;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -46,10 +43,12 @@
     font-size: 14px;
     line-height: 17px;
     color: #F2994A;
+    gap: 10px;
 }
 
 .product-price {
-    align-items: center;
+    align-self: center;
+    width: 45.24px;
     font-weight: 600;
     font-size: 10px;
     line-height: 12px;
@@ -58,6 +57,9 @@
 }
 
 hr {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #BDBDBD;
     margin-left: 27px;
     margin-right: 24px;
 }
@@ -78,9 +80,3 @@ hr {
     line-height: 17px;
     color: #333333;
 }
-
-.total-product h2 {
-    font-weight: 600;
-    font-size: 14px;
-}
-
