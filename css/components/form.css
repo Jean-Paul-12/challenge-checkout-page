@@ -1,4 +1,4 @@
-.container-form {
+.container__form {
     padding-left: 12px;
     padding-right: 12px;
 }
@@ -8,8 +8,9 @@
 }
 
 fieldset {
-    border-style: none;
     width: 100%;
+    border-style: none;
+    flex-direction: column;
 }
 
 label {
@@ -39,17 +40,18 @@ label {
 }
 
 input {
-    width: 349.25px;
+    display: flex;
+    width: 91%;
     height: 40.56px;
     border-radius: 12px;
     border-style: solid;
     border-width: 1px;
     color: #333333;
     border-color: #828282;
+    padding-left: 30px;
 }
 
-input::placeholder{
-    width: 300px;
+input::placeholder {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -58,14 +60,88 @@ input::placeholder{
     color: #828282;
 }
 
-.email input{
-    background-image: url();
+.email input {
+    background-image: url("/assets/icon/envelope-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px 13px;
+}
+
+.phone input {
+    background-image: url("/assets/icon/phone-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 11px center;
+    background-size: 15px;
+}
+
+.full-name input {
+    background-image: url("/assets/icon/circle-user-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px 13px;
+}
+
+.address input {
+    background-image: url("/assets/icon/envelope-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px 13px;
+}
+
+.city input {
+    background-image: url("/assets/icon/envelope-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px 13px;
+}
+
+.container__region {
+    display: flex;
+    margin-top: 12px;
+    width: 100%;
 }
 
 
+select {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+    width: 95%;
+    height: 40.56px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #828282;
+    padding-left: 30px;
+}
 
 
+.country select {
+    background-image: url("/assets/icon/envelope-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px 13px;
+}
+option {
+    color: #333333;
+}
 
+option::placeholder {
+    color: #333333;
+}
+
+.postal-code input {
+    display: flex;
+    width: 80%;
+    background-image: url("/assets/icon/envelope-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px 13px;
+}
 
 
 
@@ -84,7 +160,7 @@ input::placeholder{
     font-size: 10px;
     line-height: 12px;
     margin-top: 20px;
-    gap:11px;
+    gap: 11px;
 }
 
 .checkbox input {
@@ -94,4 +170,27 @@ input::placeholder{
     border-width: 1px;
     border-style: solid;
     color: #828282;
+}
+
+.container__button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 21px;
+}
+
+.button {
+    display: flex;
+    width: 166px;
+    height: 54px;
+    border-radius: 12px;
+    background-color: #F2994A;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
