@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image"
+      href="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Checkout Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image"
-    href="https://www.drupal.org/files/styles/grid-4-2x/public/serempre-logomark-color%20%282%29.png?itok=IGlIpYyL" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Checkout Page</title>
-</head>
+  <body>
+    <main class="container">
+    <h1 class="title">Checkout</h1>
+    <section class="container__shopping-card">
+      <div class="shopping-card">
+        <article class="card-product">
+          <img src="./assets/img/photo1.png" alt="" />
+          <div class="product-information">
+            <h3>Vintage Backbag</h3>
+            <p class="product-offer">
+              $54.99<span class="product-price">$94.99</span>
+            </p>
+            <div class="add__article">
+              <button type="button">-</button><span>1</span><button type="button">+</button>
+            </div>
+          </div>
+        </article>
+        <article class="card-product card-product--secondary">
+          <img src="./assets/img/photo2.png" alt="" />
+          <div class="product-information">
+            <h3>Levis Shoes</h3>
+            <p class="product-offer">
+              $74.99<span class="product-price">$124.99</span>
+            </p>
+            <div class="add__article">
+            <button type="button">-</button><span>1</span><button type="button">+</button>
+          </div>
+          </div>
+          
+        </article>
 
-<body>
-  <main class="Container"></main>
-  <h1>Checkout</h1>
-  <section class="container__shopping-card">
-    <div class="shopping-card">
-      <article class="card-product">
-        <img src="./assets/img/photo1.png" alt="">
-        <div>
-          <h3>Vintage Backbag</h3>
-
-          <p class="product-offer">$54.99<span class="product-price">$94.99</span></p>
+        <hr />
+        <div class="total-product">
+          <p>Shipping</p>
+          <p>$19</p>
         </div>
-      </article>
-
-      <hr>
-      <div class="total-product">
-        <p>Shipping</p>
-        <p>$19</p>
+        <hr />
+        <div class="total-product total-product--secondary">
+          <p>Total</p>
+          <p>$148.98</p>
+        </div>
       </div>
-      <hr>
-      <div class="total-product">
-        <p>Total</p>
-        <p>$148.98</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container__form">
-    <div class="card-form">
+    <form class="container__form">
+        <h2 class="card-contact-title">Contact information</h2>
+        <div class="form-basic-info">
+        <fieldset class="form-field form-field-icon form-field-icon--email">
+          <label>E-mail</label>
+          <input type="email" placeholder="Enter your email..." required />
+        </fieldset>
+        <fieldset class="form-field form-field-icon form-field-icon--phone">
+          <label>Phone</label>
+          <input type="tel" placeholder="Enter your phone..." required />
+        </fieldset>
+        </div>
 
-      <h2 class="card-contact-title">Contact information</h2>
+        <h2 class="card-contact-title card-contact-title--address">
+          Shipping address
+        </h2>
+        <div class="form-basic-info">
+        <fieldset class="form-field form-field-icon form-field-icon--email--full-name">
+          <label>Full name</label>
+          <input type="text" placeholder="Your full name..." required />
+        </fieldset>
+        <fieldset class="form-field form-field-icon form-field-icon--address">
+          <label>Address</label>
+          <input type="text" placeholder="Your address..." required />
+        </fieldset>
+        <fieldset class="form-field form-field-icon form-field-icon--city">
+          <label>City</label>
+          <input type="text" placeholder="Your city..." required />
+        </fieldset>
+        <div class="container__region ">
+          <fieldset class="form-field form-field--half form-field-icon--country">
+            <label>Country</label>
+            <select name="" id="" required>
+              <option value="" selected disabled hidden>Your Country...</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Unite State">Unite State</option>
+            </select>
+          </fieldset>
+          <fieldset class="form-field form-field--half form-field-icon form-field-icon--postal-code">
+            <label>Postal code</label>
+            <input type="text" placeholder="Your postal code..." required />
+          </fieldset>
+        </div>
+        </div>
 
-      <fieldset class="email">
-        <label>E-mail</label>
-        <input type="email" placeholder="Enter your email...">
-      </fieldset>
-      <fieldset class="phone">
-        <label>Phone</label>
-        <input type="tel" placeholder="Enter your phone...">
-      </fieldset>
-
-      <h2 class="card-contact-title card-contact-title--address">Shipping address</h2>
-
-      <fieldset class="full-name">
-        <label>Full name</label>
-        <input type="text" placeholder="Your full name...">
-      </fieldset>
-      <fieldset class="address">
-        <label>Address</label>
-        <input type="text" placeholder="Your address...">
-      </fieldset>
-      <fieldset class="city">
-        <label>City</label>
-        <input type="text" placeholder="Your city...">
-      </fieldset>
-      <div class="container__region">
-      <fieldset class="country">
-        <label>Country</label>
-        <select name="" id="">
-          <option value="" selected disabled hidden>Your Country...</option>
-          <option value="Colombia">Colombia</option>
-          <option value="Mexico">Mexico</option>
-          <option value="Unite State">Unite State</option>
-        </select>
-      </fieldset>
-      <fieldset class="postal-code">
-        <label>Postal code</label>
-        <input type="text" placeholder="Your postal code...">
-      </fieldset></div>
-
-      <label for="" class="checkbox"><input type="checkbox">Save this information for next time</label>
-      <div class="container__button">
-        <a href="" class="button">Continue</a>
-      </div>
-    </div>
-  </section>
-</body>
-
+        <label for="" class="checkbox">
+          <input type="checkbox" required />Save this information for next time
+        </label>
+        <div class="container__button">
+          <button type="submit" class="button" accesskey="enter">Continue</button>
+        </div>
+    </form>
+  </main>
+  </body>
 </html>
