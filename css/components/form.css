@@ -1,31 +1,28 @@
 .container__form {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.card-form {
+    width: 100%;
     margin-top: 39px;
 }
 
+
 fieldset {
-    width: 100%;
+    width: 91%;
     border-style: none;
     flex-direction: column;
 }
 
 label {
     display: block;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
     line-height: 12px;
-    color: #4F4F4F;
+    color: #4f4f4f;
     margin-bottom: 5px;
 }
 
 .card-contact-title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -35,13 +32,13 @@ label {
     margin-bottom: 11px;
 }
 
-.card-contact-title--address {
+.card-contact-title--secondary {
     margin-top: 45px;
 }
 
 input {
     display: flex;
-    width: 91%;
+    width: 100%;
     height: 40.56px;
     border-radius: 12px;
     border-style: solid;
@@ -52,44 +49,51 @@ input {
 }
 
 input::placeholder {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
     color: #828282;
+    filter: grayscale(".7");
 }
 
-.email input {
-    background-image: url("/assets/icon/envelope-solid.svg");
+.form-basic-info {
+    margin-top: 11px;
+}
+
+.form-field {
+    margin-top: 16px;
+}
+
+.form-field--half {
+    display: flex;
+}
+
+.form-field-icon input {
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 15px 13px;
 }
 
-.phone input {
-    background-image: url("/assets/icon/phone-solid.svg");
-    background-repeat: no-repeat;
-    background-position: 11px center;
-    background-size: 15px;
+.form-field-icon--email input {
+    background-image: url("/assets/icon/envelope-solid.svg");
 }
 
-.full-name input {
+.form-field-icon--phone input {
+    background-image: url("/assets/icon/call_FILL1_wght700_GRAD0_opsz48.svg");
+}
+
+.form-field-icon--email--full-name input {
     background-image: url("/assets/icon/circle-user-solid.svg");
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    background-size: 15px 13px;
 }
 
-.address input {
-    background-image: url("/assets/icon/envelope-solid.svg");
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    background-size: 15px 13px;
+.form-field-icon--address input {
+    background-image: url("/assets/icon/home_FILL1_wght500_GRAD0_opsz48.svg");
 }
 
-.city input {
-    background-image: url("/assets/icon/envelope-solid.svg");
+.form-field-icon--city input {
+    background-image: url("/assets/icon/location_city_FILL1_wght500_GRAD0_opsz48.svg");
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 15px 13px;
@@ -97,35 +101,33 @@ input::placeholder {
 
 .container__region {
     display: flex;
-    margin-top: 12px;
     width: 100%;
+    gap: 23px;
 }
 
-
 select {
-    display: flex;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
     color: #828282;
-    width: 95%;
     height: 40.56px;
     border-radius: 12px;
     border-style: solid;
     border-width: 1px;
     border-color: #828282;
     padding-left: 30px;
+
 }
 
-
-.country select {
-    background-image: url("/assets/icon/envelope-solid.svg");
+.form-field-icon--country select {
+    background-image: url("/assets/icon/public_FILL1_wght700_GRAD0_opsz48.svg");
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 15px 13px;
 }
+
 option {
     color: #333333;
 }
@@ -134,27 +136,18 @@ option::placeholder {
     color: #333333;
 }
 
-.postal-code input {
-    display: flex;
-    width: 80%;
-    background-image: url("/assets/icon/envelope-solid.svg");
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    background-size: 15px 13px;
+.form-field-icon--postal-code input {
+    width: 81%;
+    background-image: url("/assets/icon/markunread_mailbox_FILL1_wght700_GRAD0_opsz48.svg");
 }
-
-
-
-
-
 
 .checkbox {
     display: flex;
     align-items: center;
     width: 300px;
     height: 15px;
-    color: #4F4F4F;
-    font-family: 'Montserrat';
+    color: #4f4f4f;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 10px;
@@ -183,14 +176,73 @@ option::placeholder {
     width: 166px;
     height: 54px;
     border-radius: 12px;
-    background-color: #F2994A;
+    background-color: #f2994a;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
+    border-style: none;
+}
+
+.button:hover {
+    background-color: #eb6f02;
+    color: #ffffff;
+}
+
+@media (min-width:1024px) {
+    .container__form {
+        max-width: 465px;
+        order: 1;
+        margin-top: 0px;
+    }
+
+    .card-contact-title {
+        margin-top: 0px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .card-contact-title--secondary {
+        margin-top: 58px;
+    }
+
+    label {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    input {
+        height: 56px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333333;
+    }
+
+    input::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    select {
+        height: 56px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .checkbox{
+        height: 15px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .checkbox input {
+        width: 21px;
+        height: 21px;
+    }
 }
