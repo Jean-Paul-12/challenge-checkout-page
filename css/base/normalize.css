@@ -11,8 +11,8 @@
     flex-wrap: wrap;
     flex: 1;
     justify-content: center;
-    padding-right: 13px;
-    padding-left: 12px;
+    margin-right: 13px;
+    margin-left: 12px;
 }
 
 .title {
