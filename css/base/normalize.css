@@ -30,13 +30,13 @@
 
 @media (min-width:1024px) {
     .container{
-        margin-top: 2%;
         margin-right: auto;
         margin-left: auto;
         max-width: 66%;
         column-gap: 113px;
     }
     .title{
+        padding-top: 64px;
         padding-bottom: 51px;
         font-weight: 600;
         font-size: 36px;
