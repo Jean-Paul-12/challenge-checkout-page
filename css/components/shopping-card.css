@@ -2,7 +2,7 @@
     padding-bottom: 13px;
     background-color: #F2F2F2;
     border-radius: 12px;
-    width: 100%;
+    width: 350px;
     column-gap: 19px;
 }
 
@@ -13,13 +13,17 @@
     padding-right: 34px;
     padding-left: 27px;
     padding-top: 30px;
-    justify-content: center;
     gap: 19px;
 }
 
+.card-product--secondary {
+    padding-top: 28px;
+    margin-bottom: 87px;
+}
+
 .shopping-card img {
-    width: 141px;
-    height: 125px;
+    width: 122.75px;
+    height: 124.64px;
     border-radius: 13px;
 }
 
@@ -76,8 +80,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 21.2px;
-    height: 21.2px;
+    width: 19px;
+    height: 19px;
     text-decoration: none;
     background-color: #E0E0E0;
     color: #828282;
@@ -91,9 +95,6 @@
     color: #FFFFFF;
 }
 
-.card-product--secondary {
-    margin-bottom: 95px;
-}
 
 hr {
     border-width: 1px;
@@ -117,6 +118,7 @@ hr {
     color: #333333;
 }
 
+
 .total-product--secondary {
     height: 30px;
     margin-top: 13px;
@@ -127,27 +129,64 @@ hr {
         max-width: 383px;
         order: 2;
     }
+    
+    .shopping-card {
+        width: 100%;
+    
+    }
+
+    .card-product {
+        padding-top: 33px;
+        padding-left: 30px;
+        gap: 21px;
+    }
+
+    .card-product--secondary {
+        padding-top: 32px;
+        margin-bottom: 95px;
+    }
 
     .shopping-card h3 {
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
-
+    
+    .shopping-card img {
+        width: 134.21px;
+        height: 136.27px;
+    }
+    
     .product-offer {
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
     }
-
+    
     .product-price {
         font-size: 12px;
         line-height: 15px;
+    }
+    
+    .add__article {
+        width: 134.25px;
+        height: 52px;
+    }
+
+    .add__article button {
+        width: 21.2px;
+        height: 21.2px;
     }
 
     .total-product {
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .total-price {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
     }
 }
