@@ -127,7 +127,7 @@ hr {
 @media (min-width:1024px) {
     .container__shopping-card {
         max-width: 383px;
-        order: 2;
+        
     }
     
     .shopping-card {
@@ -189,4 +189,11 @@ hr {
         font-size: 14px;
         line-height: 17px;
     }
+}
+
+@media (min-width:1440px){
+    .container__shopping-card{
+        order: 2;
+    }
+    
 }
