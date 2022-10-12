@@ -28,6 +28,18 @@
     padding-left: 5px;
 }
 
+@media (min-width:425px){
+    .title{
+        padding-left: 25px;
+    }
+}
+
+@media (min-width:768px){
+    .title{
+        padding-left: 200px;
+    }
+}
+
 @media (min-width:1024px) {
     .container{
         margin-right: auto;
