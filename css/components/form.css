@@ -1,6 +1,5 @@
 .container__form {
     width: 100%;
-    margin-top: 39px;
 }
 
 
@@ -169,6 +168,7 @@ option::placeholder {
     display: flex;
     justify-content: flex-end;
     margin-top: 21px;
+    margin-bottom: 135px;
 }
 
 .button {
@@ -194,11 +194,11 @@ option::placeholder {
     color: #ffffff;
 }
 
-@media (min-width:1024px) {
+@media (min-width:1024px){
     .container__form {
         max-width: 465px;
-        order: 1;
-        margin-top: 0px;
+        
+        margin-top: 39px;
     }
 
     .card-contact-title {
@@ -249,4 +249,15 @@ option::placeholder {
         width: 21px;
         height: 21px;
     }
+    .container__button{
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width:1440px){
+    .container__form{
+        order: 1;
+        margin-top: 0px;
+    }
+    
 }
