@@ -194,11 +194,28 @@ option::placeholder {
     color: #ffffff;
 }
 
+@media (min-width:425px) {
+
+    .container__form{
+        padding-right: 22px;
+        padding-left: 29px;
+    }
+}
+
+@media (min-width:768px){
+    
+    .container__form{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
 @media (min-width:1024px){
     .container__form {
         max-width: 465px;
-        
         margin-top: 39px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     .card-contact-title {
@@ -258,6 +275,11 @@ option::placeholder {
     .container__form{
         order: 1;
         margin-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
-    
+
+    .container__button{
+        padding-right: 5px;
+    }
 }
