@@ -25,7 +25,7 @@
               $54.99<span class="product-price">$94.99</span>
             </p>
             <div class="add__article">
-              <button type="button">-</button><span>1</span><button type="button">+</button>
+              <button type="button" id="btnReduce">-</button><span id="msgValue">1</span><button type="button" id="btnIncrease">+</button>
             </div>
           </div>
         </article>
@@ -37,7 +37,7 @@
               $74.99<span class="product-price">$124.99</span>
             </p>
             <div class="add__article">
-            <button type="button">-</button><span>1</span><button type="button">+</button>
+            <button type="button" id="btnReduce">-</button><span id="msgValue">1</span><button type="button" id="btnIncrease">+</button>
           </div>
           </div>
           
@@ -65,7 +65,7 @@
         </fieldset>
         <fieldset class="form-field form-field-icon form-field-icon--phone">
           <label>Phone</label>
-          <input type="tel" placeholder="Enter your phone..." required />
+          <input type="number" placeholder="Enter your phone..." required />
         </fieldset>
         </div>
 
@@ -104,9 +104,10 @@
           <input type="checkbox" required />Save this information for next time
         </label>
         <div class="container__button">
-          <button type="submit" class="button" accesskey="enter">Continue</button>
+          <button type="submit" class="button" id="validation" accesskey="enter" >Continue</button>
         </div>
     </form>
   </main>
+  <script src="./javascript/index.js"></script>
   </body>
 </html>
