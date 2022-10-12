@@ -52,6 +52,12 @@
     
 }
 
+@media (min-width:1920px) {
+    .title{
+        padding-left: 155px;
+    }
+}
+
 @media (min-width:2560px){
     .title {
         padding-left: 375px;
