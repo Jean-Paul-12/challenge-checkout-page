@@ -117,7 +117,7 @@ select {
     border-width: 1px;
     border-color: #828282;
     padding-left: 30px;
-
+    list-style: circle;
 }
 
 .form-field-icon--country select {
@@ -125,6 +125,7 @@ select {
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 15px 13px;
+    list-style: circle;
 }
 
 option {
