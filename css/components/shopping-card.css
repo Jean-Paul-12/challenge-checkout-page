@@ -93,9 +93,33 @@
 .add__article button:hover {
     background-color: #F2994A;
     color: #FFFFFF;
+    
 }
 
+.add__article input {
+    background-color: #F2F2F2;
+    border-style: none;
+    width: 20px;
+    height: 30px;
+    align-items: center;
+    padding-left: 0px;
+    text-align: center;
+}
 
+.add__article input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.add__article input[type=number]::-webkit-inner-spin-button,
+.add_article input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.add__article input:focus-visible {
+    outline-style: none;
+}
 hr {
     border-width: 1px;
     border-style: solid;
