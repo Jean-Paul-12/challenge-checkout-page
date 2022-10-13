@@ -106,20 +106,10 @@
     text-align: center;
 }
 
-.add__article input[type="number"] {
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    appearance: textfield;
-}
-
-.add__article input[type=number]::-webkit-inner-spin-button,
-.add_article input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-}
-
 .add__article input:focus-visible {
     outline-style: none;
 }
+
 hr {
     border-width: 1px;
     border-style: solid;
