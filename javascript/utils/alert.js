@@ -1,4 +1,4 @@
 document.getElementById('validation').onclick = function(){
-    alert('Sus datos se han enviado exitosamente!');
+    alert('SUS DATOS SE HAN ENVIADO EXITOSAMENTE!!');
 }
 
