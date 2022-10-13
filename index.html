@@ -25,7 +25,7 @@
               $54.99<span class="product-price">$94.99</span>
             </p>
             <div class="add__article">
-              <button type="button" id="btnReduce">-</button><span id="msgValue">1</span><button type="button" id="btnIncrease">+</button>
+              <button type="button" class="btnReduce">-</button><input readonly type="number"  min="0" max="10" value="1" class="msgValue"/><button type="button" class="btnIncrease">+</button>
             </div>
           </div>
         </article>
@@ -37,7 +37,7 @@
               $74.99<span class="product-price">$124.99</span>
             </p>
             <div class="add__article">
-            <button type="button" id="btnReduce">-</button><span id="msgValue">1</span><button type="button" id="btnIncrease">+</button>
+              <button type="button" class="btnReduce">-</button><input readonly type="number"  min="0" max="10" value="1" class="msgValue"/><button type="button" class="btnIncrease">+</button>
           </div>
           </div>
           
@@ -95,7 +95,7 @@
           </fieldset>
           <fieldset class="form-field form-field--half form-field-icon form-field-icon--postal-code">
             <label>Postal code</label>
-            <input type="text" placeholder="Your postal code.." required />
+            <input type="number" placeholder="Your postal code.." required />
           </fieldset>
         </div>
         </div>
@@ -108,6 +108,6 @@
         </div>
     </form>
   </main>
-  <script src="./javascript/index.js"></script>
+  <script type="module" src="./javascript/index.js"></script>
   </body>
 </html>
